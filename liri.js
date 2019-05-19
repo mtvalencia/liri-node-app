@@ -38,7 +38,7 @@ function bit() {
     );
 }
 
-function spot() {
+function spot(myInput) {
  if (!myInput) {
       myInput = "The Sign Ace of Base" ;
     }
@@ -56,7 +56,7 @@ function spot() {
     });
 }
 
-function mov() {
+function mov(myInput) {
     if (!myInput) {
         myInput = "Mr. Nobody";
     }
@@ -76,3 +76,26 @@ function mov() {
         }
     );
 }
+
+function spot2() {
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        var arr = data.split(",");
+        var sys = arr[0];
+        var myInput = arr[1].split('"').join("");
+
+        if (error) {
+          return console.log(error);
+        }
+    
+        if (sys === "concert-this"){
+          bit(myInput);
+        }
+        if (sys === "spotify-this-song"){
+          spot(myInput);
+        }
+        if (sys === "movie-this"){
+          mov(myInput);
+        }
+    
+      });
+    }
