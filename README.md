@@ -10,7 +10,7 @@ Node js app that combines three APIs. Used Spotify, OMDB, and Bands in Town.
 <br>
 ## Searching for movies <br>
 ![Movie](https://github.com/mtvalencia/ProjectFiles/blob/master/OMDB_Movie.gif)
-![No Movie](https://github.com/mtvalencia/ProjectFiles/blob/master/Spotify-NoSong.gif)
+![No Movie](https://github.com/mtvalencia/ProjectFiles/blob/master/OMDB_NoMovie.gif)
 <br>
 ## Searching for anything <br>
 ![Any](https://github.com/mtvalencia/ProjectFiles/blob/master/Any.gif)
